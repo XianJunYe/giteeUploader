@@ -1,0 +1,15 @@
+#drop-zone {
+  width: 300px;
+  height: 180px;
+  border: 2px dashed #aaa;
+  padding: 10px;
+  margin: 10px 0;
+  overflow: auto;
+}
+#placeholder {
+  color: #888;
+}
+input {
+  margin: 4px 0;
+  width: 200px;
+}

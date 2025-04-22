@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Gitee 上传</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 粘贴界面 -->
+  <div id="paste-view">
+    <h3>粘贴图片到下方区域</h3>
+    <button id="config-btn">⚙️ 配置</button>
+    <div id="drop-zone" contenteditable="true">
+      <span id="placeholder">粘贴图片到此区域</span>
+    </div>
+    <pre id="result"></pre>
+  </div>
+
+  <!-- 配置界面 -->
+  <div id="config-view" style="display: none;">
+    <h3>Gitee 配置</h3>
+    <label>用户名: <input id="username"></label><br>
+    <label>仓库名: <input id="repo"></label><br>
+    <label>分支: <input id="branch" value="master"></label><br>
+    <label>Token: <input id="token" type="password"></label><br><br>
+    <button id="save-config">保存配置</button>
+    <button id="cancel-config">返回</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
